@@ -60,14 +60,6 @@ var loadNotes = function()
 
 const removeNote = function(title)
 {
-// {
-//   const notes = loadNotes();
-//   const removenote = notes.filter(function(){
-//       return notes.title === title;
-//   })
-
-// console.log(removenote);
-// return const removeNote = (title) => {
     const notes = loadNotes()
     const NotesToKeep = notes.filter((note) => note.title !== title)
     if (notes.length > NotesToKeep.length) {
